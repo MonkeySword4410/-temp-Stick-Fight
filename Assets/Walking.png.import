@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dk2dkcr3gbcmw"
-path="res://.godot/imported/Walking.png-b24974f90deb72ef0a24b73d7773df38.ctex"
+path="res://.godot/imported/Walking.png-302ac8b321f185a63477421be2a712c0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Animations/Walking.png"
-dest_files=["res://.godot/imported/Walking.png-b24974f90deb72ef0a24b73d7773df38.ctex"]
+source_file="res://Assets/Walking.png"
+dest_files=["res://.godot/imported/Walking.png-302ac8b321f185a63477421be2a712c0.ctex"]
 
 [params]
 
