@@ -1,7 +1,14 @@
+<<<<<<< Updated upstream
 [gd_scene load_steps=26 format=3 uid="uid://dss28g60oxkbl"]
 
 [ext_resource type="Texture2D" uid="uid://d3uu2bbsuypib" path="res://Assets/Roll.png" id="1_4v5ag"]
 [ext_resource type="Texture2D" uid="uid://c0oap4rv0fxp4" path="res://Assets/Running.png" id="2_ccqcv"]
+=======
+[gd_scene load_steps=26 format=3 uid="uid://bn2fguymn64i4"]
+
+[ext_resource type="Texture2D" path="res://Assets/Roll.png" id="1_4v5ag"]
+[ext_resource type="Texture2D" path="res://Assets/Running.png" id="2_ccqcv"]
+>>>>>>> Stashed changes
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ht481"]
 atlas = ExtResource("1_4v5ag")
@@ -176,7 +183,11 @@ size = Vector2(28, 62)
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_mgtf7")
 animation = &"Running"
+<<<<<<< Updated upstream
 frame_progress = 0.49951294
+=======
+frame_progress = 0.13573392
+>>>>>>> Stashed changes
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(2, 33)
