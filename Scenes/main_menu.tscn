@@ -99,3 +99,5 @@ animations = [{
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_vtepg")
 frame_progress = 0.697874
+
+[node name="Camera2D" type="Camera2D" parent="."]
