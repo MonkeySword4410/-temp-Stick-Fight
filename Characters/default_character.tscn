@@ -1,10 +1,17 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 [gd_scene load_steps=26 format=3 uid="uid://dss28g60oxkbl"]
 
 [ext_resource type="Texture2D" uid="uid://d3uu2bbsuypib" path="res://Assets/Roll.png" id="1_4v5ag"]
 [ext_resource type="Texture2D" uid="uid://c0oap4rv0fxp4" path="res://Assets/Running.png" id="2_ccqcv"]
 =======
 [gd_scene load_steps=26 format=3 uid="uid://bn2fguymn64i4"]
+
+[ext_resource type="Texture2D" path="res://Assets/Roll.png" id="1_4v5ag"]
+[ext_resource type="Texture2D" path="res://Assets/Running.png" id="2_ccqcv"]
+>>>>>>> Stashed changes
+=======
+[gd_scene load_steps=26 format=3 uid="uid://wddoextm44ns"]
 
 [ext_resource type="Texture2D" path="res://Assets/Roll.png" id="1_4v5ag"]
 [ext_resource type="Texture2D" path="res://Assets/Running.png" id="2_ccqcv"]
@@ -184,9 +191,13 @@ size = Vector2(28, 62)
 sprite_frames = SubResource("SpriteFrames_mgtf7")
 animation = &"Running"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 frame_progress = 0.49951294
 =======
 frame_progress = 0.13573392
+>>>>>>> Stashed changes
+=======
+frame_progress = 0.12566821
 >>>>>>> Stashed changes
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
