@@ -1,7 +1,9 @@
-[gd_scene load_steps=26 format=3 uid="uid://dss28g60oxkbl"]
+[gd_scene load_steps=33 format=3 uid="uid://dss28g60oxkbl"]
 
 [ext_resource type="Texture2D" uid="uid://d3uu2bbsuypib" path="res://Assets/Roll.png" id="1_4v5ag"]
+[ext_resource type="Script" uid="uid://do7q6lvhw00mr" path="res://Scripts/default_character.gd" id="1_ccqcv"]
 [ext_resource type="Texture2D" uid="uid://c0oap4rv0fxp4" path="res://Assets/Running.png" id="1_w2ywy"]
+[ext_resource type="Texture2D" uid="uid://b5sk1msg2vukg" path="res://Assets/Stop_Running.png" id="4_ht481"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qcpu7"]
 atlas = ExtResource("1_4v5ag")
@@ -87,6 +89,26 @@ region = Rect2(1280, 0, 128, 128)
 atlas = ExtResource("1_w2ywy")
 region = Rect2(1408, 0, 128, 128)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_xfv4b"]
+atlas = ExtResource("4_ht481")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8kfuh"]
+atlas = ExtResource("4_ht481")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mgtf7"]
+atlas = ExtResource("4_ht481")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j64s0"]
+atlas = ExtResource("4_ht481")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jxeix"]
+atlas = ExtResource("4_ht481")
+region = Rect2(512, 0, 128, 128)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_qcpu7"]
 animations = [{
 "frames": [{
@@ -161,12 +183,33 @@ animations = [{
 "loop": true,
 "name": &"Run",
 "speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xfv4b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8kfuh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mgtf7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j64s0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jxeix")
+}],
+"loop": false,
+"name": &"Stop Running",
+"speed": 10.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ia645"]
 size = Vector2(24, 64)
 
 [node name="Default Character" type="CharacterBody2D"]
+script = ExtResource("1_ccqcv")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_qcpu7")
