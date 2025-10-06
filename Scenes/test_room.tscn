@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://c67lnflil460n"]
 
-[ext_resource type="PackedScene" uid="uid://dss28g60oxkbl" path="res://Characters/default_character.tscn" id="1_ycph5"]
+[ext_resource type="PackedScene" uid="uid://dss28g60oxkbl" path="res://Characters/default_character_animated_sprite.tscn" id="1_ycph5"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_6idp7"]
 distance = -409.0
@@ -10,6 +10,9 @@ distance = 259.0
 
 [node name="Test Room" type="Node2D"]
 
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, 50)
+
 [node name="Polygon2D" type="Polygon2D" parent="."]
 position = Vector2(40, -164)
 scale = Vector2(2, 2)
@@ -17,26 +20,28 @@ invert_enabled = true
 invert_border = 200.0
 polygon = PackedVector2Array(-305, 249, 257, 249, 257, -43, -305, -43)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Polygon2D"]
-position = Vector2(-13.5, 45)
-scale = Vector2(0.5, 0.5)
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(13, -74)
 shape = SubResource("WorldBoundaryShape2D_6idp7")
 
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="Polygon2D"]
-position = Vector2(-18.5, 161)
-rotation = 3.1415927
-scale = Vector2(0.5, 0.5)
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(3, 158)
+rotation = -3.1415925
 shape = SubResource("WorldBoundaryShape2D_6idp7")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Polygon2D"]
-position = Vector2(516.5, 82)
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1073, 0)
 rotation = -1.5707964
+scale = Vector2(2, 2)
 shape = SubResource("WorldBoundaryShape2D_rx0dc")
 
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="Polygon2D"]
-position = Vector2(-565.5, 80.5)
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-1091, -3)
 rotation = 1.5707964
+scale = Vector2(2, 2)
 shape = SubResource("WorldBoundaryShape2D_rx0dc")
 
-[node name="Default Character" parent="." instance=ExtResource("1_ycph5")]
-position = Vector2(-520, 254)
+[node name="Default Character Animated Sprite" parent="." instance=ExtResource("1_ycph5")]
+position = Vector2(-237, -27)
