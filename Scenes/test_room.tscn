@@ -1,6 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://c67lnflil460n"]
+[gd_scene load_steps=5 format=3 uid="uid://c67lnflil460n"]
 
 [ext_resource type="PackedScene" uid="uid://dss28g60oxkbl" path="res://Characters/default_character_animated_sprite.tscn" id="1_ycph5"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ycph5"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_6idp7"]
 distance = -409.0
@@ -20,7 +22,11 @@ invert_enabled = true
 invert_border = 200.0
 polygon = PackedVector2Array(-305, 249, 257, 249, 257, -43, -305, -43)
 
+[node name="Default Character" parent="." instance=ExtResource("1_ycph5")]
+position = Vector2(-520, 254)
+
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_ycph5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(13, -74)
@@ -43,5 +49,5 @@ rotation = 1.5707964
 scale = Vector2(2, 2)
 shape = SubResource("WorldBoundaryShape2D_rx0dc")
 
-[node name="Default Character Animated Sprite" parent="." instance=ExtResource("1_ycph5")]
-position = Vector2(-237, -27)
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-9, 40)
