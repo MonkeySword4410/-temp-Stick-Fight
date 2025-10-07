@@ -19,9 +19,6 @@ invert_enabled = true
 invert_border = 200.0
 polygon = PackedVector2Array(-305, 249, 257, 249, 257, -43, -305, -43)
 
-[node name="Default Character" parent="." instance=ExtResource("1_ycph5")]
-position = Vector2(-520, 254)
-
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 physics_material_override = SubResource("PhysicsMaterial_ycph5")
 
@@ -46,5 +43,5 @@ rotation = 1.5707964
 scale = Vector2(2, 2)
 shape = SubResource("WorldBoundaryShape2D_rx0dc")
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-9, 40)
+[node name="Default Character" parent="." instance=ExtResource("1_ycph5")]
+position = Vector2(-285, 191)
