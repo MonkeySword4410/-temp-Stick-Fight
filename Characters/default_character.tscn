@@ -1,7 +1,7 @@
 [gd_scene load_steps=33 format=3 uid="uid://dss28g60oxkbl"]
 
 [ext_resource type="Texture2D" uid="uid://d3uu2bbsuypib" path="res://Assets/Roll.png" id="1_4v5ag"]
-[ext_resource type="Script" uid="uid://do7q6lvhw00mr" path="res://Scripts/default_character.gd" id="1_ccqcv"]
+[ext_resource type="Script" uid="uid://dym61xgmrcltw" path="res://Scripts/Default_Movement.gd" id="1_sa2lv"]
 [ext_resource type="Texture2D" uid="uid://c0oap4rv0fxp4" path="res://Assets/Running.png" id="1_w2ywy"]
 [ext_resource type="Texture2D" uid="uid://b5sk1msg2vukg" path="res://Assets/Stop_Running.png" id="4_ht481"]
 
@@ -209,7 +209,7 @@ animations = [{
 size = Vector2(24, 64)
 
 [node name="Default Character" type="CharacterBody2D"]
-script = ExtResource("1_ccqcv")
+script = ExtResource("1_sa2lv")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_qcpu7")
