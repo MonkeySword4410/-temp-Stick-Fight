@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://c67lnflil460n"]
 
-[ext_resource type="PackedScene" uid="uid://dss28g60oxkbl" path="res://Characters/default_character.tscn" id="1_ycph5"]
+[ext_resource type="PackedScene" uid="uid://dss28g60oxkbl" path="res://Characters/default_character_animated_sprite.tscn" id="1_ycph5"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_ycph5"]
 
@@ -11,6 +11,9 @@ distance = -409.0
 distance = 259.0
 
 [node name="Test Room" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, 50)
 
 [node name="Polygon2D" type="Polygon2D" parent="."]
 position = Vector2(40, -164)
